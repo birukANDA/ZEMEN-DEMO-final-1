@@ -1178,7 +1178,8 @@
 <!-- SECTION 3: PRODUCTS -->
 <!-- Products Section with Fixed Background & Enhanced Effects -->
 
- <section id="products" class="py-24 bg-cover bg-center bg-no-repeat relative overflow-hidden" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('image/photo 11.jpg'); background-attachment: fixed;">
+<!-- ========== PRODUCTS SECTION ========== -->
+<section id="products" class="py-16 md:py-24 bg-cover bg-center bg-no-repeat relative overflow-hidden bg-fixed-mobile" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('image/photo 11.jpg'); background-attachment: fixed;">
    
   <!-- Animated Background Particles -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -1196,13 +1197,13 @@
   <div class="container mx-auto px-4 md:px-6 relative z-10">
     
     <!-- Centered Header with Navigation Buttons Pushed Right -->
-    <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative gap-6">
+    <div class="flex flex-col md:flex-row items-center justify-between mb-8 md:mb-12 relative gap-6">
       
       <!-- Spacer for Desktop Balance -->
       <div class="hidden md:block w-32"></div>
 
       <!-- Main Heading Text (Centered) with Reveal Animation -->
-      <div class="max-w-2xl text-center mx-auto animate-fade-up">
+      <div class="max-w-2xl text-center mx-auto animate-fade-up w-full">
         <div class="flex items-center justify-center gap-2 mb-3">
           <div class="h-px w-8 bg-gradient-to-r from-transparent to-orange-500"></div>
           <h2 class="text-orange-500 font-bold tracking-wider uppercase text-sm animate-pulse">
@@ -1210,37 +1211,37 @@
           </h2>
           <div class="h-px w-8 bg-gradient-to-l from-transparent to-orange-500"></div>
         </div>
-        <h3 class="text-3xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent bg-300% animate-gradient">
+        <h3 class="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent bg-300% animate-gradient">
           High-Quality Rebar, Steel, & Construction Materials
         </h3>
-        <p class="text-slate-200/90 text-lg leading-relaxed">
+        <p class="text-slate-200/90 text-base sm:text-lg leading-relaxed px-2">
           We stock a wide range of structural reinforcement and essential construction materials. All our products meet international standards and are ready for immediate dispatch to your project site.
         </p>
         
         <!-- Animated Stats -->
-        <div class="flex justify-center gap-8 mt-6">
+        <div class="flex justify-center gap-4 sm:gap-8 mt-6 stats-container">
           <div class="text-center">
-            <div class="text-2xl font-bold text-orange-400 counter" data-target="500">0</div>
-            <div class="text-xs text-slate-300 uppercase tracking-wider">Products</div>
+            <div class="text-xl sm:text-2xl font-bold text-orange-400 counter" data-target="500">0</div>
+            <div class="text-[10px] sm:text-xs text-slate-300 uppercase tracking-wider">Products</div>
           </div>
           <div class="text-center">
-            <div class="text-2xl font-bold text-orange-400 counter" data-target="98">0</div>
-            <div class="text-xs text-slate-300 uppercase tracking-wider">Satisfaction %</div>
+            <div class="text-xl sm:text-2xl font-bold text-orange-400 counter" data-target="98">0</div>
+            <div class="text-[10px] sm:text-xs text-slate-300 uppercase tracking-wider">Satisfaction %</div>
           </div>
           <div class="text-center">
-            <div class="text-2xl font-bold text-orange-400 counter" data-target="24">0</div>
-            <div class="text-xs text-slate-300 uppercase tracking-wider">Hour Support</div>
+            <div class="text-xl sm:text-2xl font-bold text-orange-400 counter" data-target="24">0</div>
+            <div class="text-[10px] sm:text-xs text-slate-300 uppercase tracking-wider">Hour Support</div>
           </div>
         </div>
       </div>
 
       <!-- Manual Slide Navigation Buttons (Aligned Right) -->
-      <div class="flex items-center gap-3 shrink-0">
-        <button id="productPrevBtn" aria-label="Previous product" class="w-12 h-12 rounded-full border-2 border-white/30 text-white hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-orange-500/30 active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed backdrop-blur-sm bg-white/5">
-          <i class="fas fa-arrow-left text-lg"></i>
+      <div class="flex items-center gap-3 shrink-0 header-nav-buttons">
+        <button id="productPrevBtn" aria-label="Previous product" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white/30 text-white hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-orange-500/30 active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed backdrop-blur-sm bg-white/5">
+          <i class="fas fa-arrow-left text-base sm:text-lg"></i>
         </button>
-        <button id="productNextBtn" aria-label="Next product" class="w-12 h-12 rounded-full border-2 border-white/30 text-white hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-orange-500/30 active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed backdrop-blur-sm bg-white/5">
-          <i class="fas fa-arrow-right text-lg"></i>
+        <button id="productNextBtn" aria-label="Next product" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white/30 text-white hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-orange-500/30 active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed backdrop-blur-sm bg-white/5">
+          <i class="fas fa-arrow-right text-base sm:text-lg"></i>
         </button>
       </div>
 
@@ -1254,15 +1255,14 @@
     </div>
     
     <!-- Horizontal Scroll Container with Drag & Snap Support -->
-    <div id="productSlider" class="flex gap-8 overflow-x-auto snap-x snap-mandatory py-6 px-1 scroll-smooth cursor-grab active:cursor-grabbing select-none" style="scrollbar-width: none; -ms-overflow-style: none;">
+    <div id="productSlider" class="flex gap-4 sm:gap-8 overflow-x-auto snap-x snap-mandatory py-4 sm:py-6 px-1 scroll-smooth cursor-grab active:cursor-grabbing select-none" style="scrollbar-width: none; -ms-overflow-style: none;">
       
       <!-- Product 1: Deformed Rebar -->
       <div class="product-card w-full sm:w-[320px] md:w-[350px] lg:w-[360px] flex-shrink-0 snap-start bg-gradient-to-br from-[#007bc7] to-[#005a94] rounded-2xl shadow-2xl hover:shadow-orange-500/20 hover:border-2 hover:border-orange-400 transition-all duration-500 overflow-hidden group transform hover:-translate-y-3 hover:scale-[1.02] text-white flex flex-col justify-between relative">
-        <!-- Card Glow Effect -->
         <div class="absolute inset-0 bg-gradient-to-t from-orange-500/0 via-orange-500/0 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
         <div>
           <div class="product-image-container relative h-56 overflow-hidden">
-            <img src="https://storage.googleapis.com/dala-prod-public-storage/generated-images/9a4b4e0b-dc40-48bf-ac52-7677632e63e7/rebar-hero-c885eeb3-1776186562215.webp" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <img src="https://storage.googleapis.com/dala-prod-public-storage/generated-images/9a4b4e0b-dc40-48bf-ac52-7677632e63e7/rebar-hero-c885eeb3-1776186562215.webp" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Deformed Rebar">
             <div class="absolute inset-0 bg-gradient-to-t from-[#007bc7] via-transparent to-transparent opacity-60"></div>
             <span class="absolute top-4 left-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm animate-pulse">
               <i class="fas fa-fire mr-1"></i> Most Popular
@@ -1271,19 +1271,19 @@
               <i class="fas fa-eye text-[#007bc7] group-hover:text-white transition-colors"></i>
             </button>
           </div>
-          <div class="p-5">
-            <h4 class="text-xl font-bold text-white group-hover:text-orange-300 transition-colors">Deformed Rebar (Grade 75)</h4>
-            <p class="text-blue-100 text-sm my-2">Standard reinforcement steel for concrete foundations and walls. High tensile strength.</p>
-            <ul class="text-xs text-blue-100 list-disc list-inside mb-3 space-y-1">
+          <div class="p-4 sm:p-5">
+            <h4 class="text-lg sm:text-xl font-bold text-white group-hover:text-orange-300 transition-colors">Deformed Rebar (Grade 75)</h4>
+            <p class="text-blue-100 text-xs sm:text-sm my-2">Standard reinforcement steel for concrete foundations and walls. High tensile strength.</p>
+            <ul class="text-[10px] sm:text-xs text-blue-100 list-disc list-inside mb-3 space-y-1">
               <li>Excellent concrete bonding</li>
               <li>Superior weldability</li>
               <li>High seismic resistance</li>
             </ul>
-            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-xs font-mono mt-3 border border-blue-400/20">📏 #1 (8mm) | #2 (10mm) | #3 (12mm) | #4 (14mm) | #5 (16mm) | #6 (20mm) | #8 (24mm) | #9 (32mm)</div>
+            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-[10px] sm:text-xs font-mono mt-3 border border-blue-400/20">📏 #1 (8mm) | #2 (10mm) | #3 (12mm) | #4 (14mm) | #5 (16mm) | #6 (20mm) | #8 (24mm) | #9 (32mm)</div>
           </div>
         </div>
-        <div class="p-5 pt-0">
-          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30" data-product="Deformed Rebar Grade 75">
+        <div class="p-4 sm:p-5 pt-0">
+          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2 sm:py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30 text-sm sm:text-base" data-product="Deformed Rebar Grade 75">
             <i class="fas fa-shopping-cart mr-2"></i>Get Details
           </button>
         </div>
@@ -1294,7 +1294,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-orange-500/0 via-orange-500/0 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
         <div>
           <div class="product-image-container relative h-56 overflow-hidden">
-            <img src="image\photo 10.jpg" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <img src="image/photo 10.jpg" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="National Cement">
             <div class="absolute inset-0 bg-gradient-to-t from-[#007bc7] via-transparent to-transparent opacity-60"></div>
             <span class="absolute top-4 left-4 bg-gradient-to-r from-blue-400 to-blue-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm">
               <i class="fas fa-shield-alt mr-1"></i> Durable
@@ -1303,19 +1303,19 @@
               <i class="fas fa-eye text-[#007bc7] group-hover:text-white transition-colors"></i>
             </button>
           </div>
-          <div class="p-5">
-            <h4 class="text-xl font-bold text-white group-hover:text-orange-300 transition-colors">National Cement</h4>
-            <p class="text-blue-100 text-sm my-2">It delivers consistent strength, superior quality, and reliable performance for every construction project. As an authorized agent, our company proudly supplies genuine National Cement.</p>
-            <ul class="text-xs text-blue-100 list-disc list-inside mb-3 space-y-1">
+          <div class="p-4 sm:p-5">
+            <h4 class="text-lg sm:text-xl font-bold text-white group-hover:text-orange-300 transition-colors">National Cement</h4>
+            <p class="text-blue-100 text-xs sm:text-sm my-2">It delivers consistent strength, superior quality, and reliable performance for every construction project. As an authorized agent, our company proudly supplies genuine National Cement.</p>
+            <ul class="text-[10px] sm:text-xs text-blue-100 list-disc list-inside mb-3 space-y-1">
               <li>Rapid setting (OPC)</li>
               <li>High final strength</li>
               <li>Low heat of hydration (PPC)</li>
             </ul>
-            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-xs mt-3 border border-blue-400/20">✅ Cement | National OPC and PPC Cement </div>
+            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-[10px] sm:text-xs mt-3 border border-blue-400/20">✅ Cement | National OPC and PPC Cement </div>
           </div>
         </div>
-        <div class="p-5 pt-0">
-          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30" data-product="National Cement">
+        <div class="p-4 sm:p-5 pt-0">
+          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2 sm:py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30 text-sm sm:text-base" data-product="National Cement">
             <i class="fas fa-shopping-cart mr-2"></i>Get Details
           </button>
         </div>
@@ -1326,7 +1326,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-orange-500/0 via-orange-500/0 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
         <div>
           <div class="product-image-container relative h-56 overflow-hidden">
-            <img src="image\PHOTO 8.webp" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <img src="image/PHOTO 8.webp" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Galvanized Wire">
             <div class="absolute inset-0 bg-gradient-to-t from-[#007bc7] via-transparent to-transparent opacity-60"></div>
             <span class="absolute top-4 left-4 bg-gradient-to-r from-green-500 to-green-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm">
               <i class="fas fa-bolt mr-1"></i> Efficiency
@@ -1335,15 +1335,14 @@
               <i class="fas fa-eye text-[#007bc7] group-hover:text-white transition-colors"></i>
             </button>
           </div>
-          <div class="p-5">
-            <h4 class="text-xl font-bold text-white group-hover:text-orange-300 transition-colors">Galvanized Wire</h4>
-            <p class="text-blue-100 text-sm my-2"> We distribute 1.5 mm and 2.5 mm galvanized wire </p>
-           
-            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-xs mt-3 border border-blue-400/20">Black wire 1.5 | Black wire 2.5 </div>
+          <div class="p-4 sm:p-5">
+            <h4 class="text-lg sm:text-xl font-bold text-white group-hover:text-orange-300 transition-colors">Galvanized Wire</h4>
+            <p class="text-blue-100 text-xs sm:text-sm my-2"> We distribute 1.5 mm and 2.5 mm galvanized wire </p>
+            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-[10px] sm:text-xs mt-3 border border-blue-400/20">Black wire 1.5 | Black wire 2.5 </div>
           </div>
         </div>
-        <div class="p-5 pt-0">
-          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30" data-product="Galvanized Wire">
+        <div class="p-4 sm:p-5 pt-0">
+          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2 sm:py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30 text-sm sm:text-base" data-product="Galvanized Wire">
             <i class="fas fa-shopping-cart mr-2"></i>Get Details
           </button>
         </div>
@@ -1354,7 +1353,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-orange-500/0 via-orange-500/0 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
         <div>
           <div class="product-image-container relative h-56 overflow-hidden">
-            <img src="image\PHOTO 9.jpg" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <img src="image/PHOTO 9.jpg" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Nails">
             <div class="absolute inset-0 bg-gradient-to-t from-[#007bc7] via-transparent to-transparent opacity-60"></div>
             <span class="absolute top-4 left-4 bg-gradient-to-r from-purple-500 to-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm">
               <i class="fas fa-gem mr-1"></i> Premium
@@ -1363,26 +1362,25 @@
               <i class="fas fa-eye text-[#007bc7] group-hover:text-white transition-colors"></i>
             </button>
           </div>
-          <div class="p-5">
-            <h4 class="text-xl font-bold text-white group-hover:text-orange-300 transition-colors">Nails</h4>
-            <p class="text-blue-100 text-sm my-2"> We also distribute Nails from 5mm to 12mm  </p>
-            
-            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-xs mt-3 border border-blue-400/20">🔩 High Corrosion Resistance. size:- 6mm to 12mm</div>
+          <div class="p-4 sm:p-5">
+            <h4 class="text-lg sm:text-xl font-bold text-white group-hover:text-orange-300 transition-colors">Nails</h4>
+            <p class="text-blue-100 text-xs sm:text-sm my-2"> We also distribute Nails from 5mm to 12mm  </p>
+            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-[10px] sm:text-xs mt-3 border border-blue-400/20">🔩 High Corrosion Resistance. size:- 6mm to 12mm</div>
           </div>
         </div>
-        <div class="p-5 pt-0">
-          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30" data-product="Nails">
+        <div class="p-4 sm:p-5 pt-0">
+          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2 sm:py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30 text-sm sm:text-base" data-product="Nails">
             <i class="fas fa-shopping-cart mr-2"></i>Get Details
           </button>
         </div>
       </div>
 
-      <!-- Product 5: Corrugated Roofing Sheets -->
+      <!-- Product 5: Playwood -->
       <div class="product-card w-full sm:w-[320px] md:w-[350px] lg:w-[360px] flex-shrink-0 snap-start bg-gradient-to-br from-[#007bc7] to-[#005a94] rounded-2xl shadow-2xl hover:shadow-orange-500/20 hover:border-2 hover:border-orange-400 transition-all duration-500 overflow-hidden group transform hover:-translate-y-3 hover:scale-[1.02] text-white flex flex-col justify-between relative">
         <div class="absolute inset-0 bg-gradient-to-t from-orange-500/0 via-orange-500/0 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
         <div>
           <div class="product-image-container relative h-56 overflow-hidden">
-            <img src="image\photo_3.jpg" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <img src="image/photo_3.jpg" class="product-image w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Playwood">
             <div class="absolute inset-0 bg-gradient-to-t from-[#007bc7] via-transparent to-transparent opacity-60"></div>
             <span class="absolute top-4 left-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm">
               <i class="fas fa-umbrella mr-1"></i> Weatherproof
@@ -1391,15 +1389,14 @@
               <i class="fas fa-eye text-[#007bc7] group-hover:text-white transition-colors"></i>
             </button>
           </div>
-          <div class="p-5">
-            <h4 class="text-xl font-bold text-white group-hover:text-orange-300 transition-colors"> Playwoods </h4>
-            <p class="text-blue-100 text-sm my-2"> Other our supplied product was green and yellow playwood.</p>
-            
-            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-xs mt-3 border border-blue-400/20">🏠 green | yellow playwood </div>
+          <div class="p-4 sm:p-5">
+            <h4 class="text-lg sm:text-xl font-bold text-white group-hover:text-orange-300 transition-colors"> Playwoods </h4>
+            <p class="text-blue-100 text-xs sm:text-sm my-2"> Other our supplied product was green and yellow playwood.</p>
+            <div class="bg-blue-800/50 backdrop-blur-sm p-2 rounded-xl text-[10px] sm:text-xs mt-3 border border-blue-400/20">🏠 green | yellow playwood </div>
           </div>
         </div>
-        <div class="p-5 pt-0">
-          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30" data-product="Roofing Sheets">
+        <div class="p-4 sm:p-5 pt-0">
+          <button class="product-inq-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 border-2 border-orange-500 text-white py-2 sm:py-2.5 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 hover:border-orange-600 transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-orange-500/30 text-sm sm:text-base" data-product="Roofing Sheets">
             <i class="fas fa-shopping-cart mr-2"></i>Get Details
           </button>
         </div>
@@ -1407,8 +1404,8 @@
       
     </div>
     
-    <div class="mt-12 text-center">
-      <button id="fullInventoryBtn" class="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-orange-500/40 active:scale-95 relative overflow-hidden">
+    <div class="mt-8 sm:mt-12 text-center">
+      <button id="fullInventoryBtn" class="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-orange-500/40 active:scale-95 relative overflow-hidden text-sm sm:text-base">
         <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
         <i class="fas fa-warehouse mr-2"></i>View Full Inventory
       </button>
@@ -1431,8 +1428,8 @@
   </div>
 </section>
 
-<!-- Testimonials Section with Enhanced Effects -->
-<section id="testimonials" class="py-24 relative overflow-hidden" style="background-color: #007bc7;">
+<!-- ========== TESTIMONIALS SECTION ========== -->
+<section id="testimonials" class="py-16 md:py-24 relative overflow-hidden" style="background-color: #007bc7;">
   
   <!-- Glowing Orange Accent Lights -->
   <div class="absolute -top-20 -left-20 w-96 h-96 bg-[#f97316]/30 rounded-full blur-[120px] animate-pulse-slow pointer-events-none"></div>
@@ -1446,7 +1443,7 @@
     <div style="background-image: radial-gradient(circle at 20% 50%, #f97316 1px, transparent 1px); background-size: 30px 30px; width: 100%; height: 100%;"></div>
   </div>
 
-  <div class="container mx-auto px-4 md:px-6 relative z-10 mb-14">
+  <div class="container mx-auto px-4 md:px-6 relative z-10 mb-10 md:mb-14">
     <div class="text-center max-w-3xl mx-auto animate-fade-up">
       <div class="flex items-center justify-center gap-2 mb-3">
         <div class="h-px w-8 bg-gradient-to-r from-transparent to-orange-400"></div>
@@ -1455,10 +1452,10 @@
         </h2>
         <div class="h-px w-8 bg-gradient-to-l from-transparent to-orange-400"></div>
       </div>
-      <h3 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent bg-300% animate-gradient">
+      <h3 class="text-2xl sm:text-3xl md:text-5xl font-black text-white mb-4 tracking-tight bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent bg-300% animate-gradient">
         What people say about Zemen Trading
       </h3>
-      <p class="text-blue-100 text-sm md:text-base max-w-2xl mx-auto">
+      <p class="text-blue-100 text-sm md:text-base max-w-2xl mx-auto px-2">
         See what top contractors and structural engineers say about working with Steely RMI.
       </p>
     </div>
@@ -1468,44 +1465,42 @@
   <div class="relative w-full overflow-hidden py-4">
     
     <!-- Side Fade Masks (Fade to Main Blue) -->
-    <div class="absolute top-0 left-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#007bc7] to-transparent z-20 pointer-events-none"></div>
-    <div class="absolute top-0 right-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#007bc7] to-transparent z-20 pointer-events-none"></div>
+    <div class="absolute top-0 left-0 bottom-0 w-8 md:w-32 bg-gradient-to-r from-[#007bc7] to-transparent z-20 pointer-events-none"></div>
+    <div class="absolute top-0 right-0 bottom-0 w-8 md:w-32 bg-gradient-to-l from-[#007bc7] to-transparent z-20 pointer-events-none"></div>
 
     <!-- Infinite Scrolling Track -->
-    <div class="flex gap-6 animate-marquee hover:[animation-play-state:paused] w-max">
+    <div class="flex gap-4 md:gap-6 animate-marquee hover:[animation-play-state:paused] w-max">
       
       <!-- Card 1: Ethiopia Ministry of Education (Amharic) -->
-      <div class="card-wrapper w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
-        <!-- Orange Overlay Filter Effect -->
+      <div class="card-wrapper w-[280px] sm:w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
         <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 via-orange-500/0 to-orange-600/0 group-hover:from-orange-500/20 group-hover:via-orange-500/10 group-hover:to-orange-600/20 transition-all duration-500 z-10 pointer-events-none"></div>
-        <!-- Glow Ring on Hover -->
         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-orange-500/0 via-orange-400/0 to-orange-500/0 group-hover:from-orange-500/30 group-hover:via-orange-400/20 group-hover:to-orange-500/30 blur-xl transition-all duration-500 -z-0"></div>
         
-        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
           <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
             <div class="h-8 flex items-center gap-2">
               <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400 font-black text-xs group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-graduation-cap"></i>
               </div>
-              <span class="text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">MINISTRY OF EDUCATION</span>
+              <span class="text-xs sm:text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">MINISTRY OF EDUCATION</span>
             </div>
             <div class="flex items-center gap-0.5 text-orange-400 text-xs">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
-          <div class="text-slate-200 text-sm leading-relaxed mb-4 italic max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300" dir="rtl" lang="am">
+          <div class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-4 italic max-h-[140px] sm:max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300" dir="rtl" lang="am">
             "ስቴሊ አር.ኤም. አይ. ኃሊ.የተ.የገ.ማህበር ከመከሪያ ቤታችን ጋር ውለታ በመፈጸም የአርማታ ብረት ሲያቀርብ መቆየቱን በመግለጽ የመልካም ሥራ አፈጻጸም ማስረጃ እንዲጻፍለት በ16/03/2026 ዓ.ም በተጻፈ ደብዳቤ ጠይቋል፡፡ በመሆኑም ትምህርት ሚኒስቴር ለዩኒቨርሲቲዎች ግንባታ፣ለሁለተኛ እና አንደኛ ደረጃ ትምህርት ቤቶች መልሶ ግንባታ የሚያስፈልገውን አርማታ ብረት ለመግዛት በተለያየ ጊዜ ባወጣው ጨረታ ላይ ስቴሊ አር.ኤም. አይ. ኃሊ.የተ.የገ.ማህበር ተወዳድሮ አሸናፊ በመሆኑ ከመስሪያ ቤታችን ጋርውል ፈርማል፡፡ ድርጅቱም በገባው ውል መሰረት የተለያየ መጠን ያለውን አርማታ ብረት በማቅረብ ግዴታውን በብቃት የተወጣ በመሆኑ ይህን የመልካም ስራ አፈጻጸም ደብዳቤ ከምስጋና ጋር የሰጠናቸው መሆኑን እንገልጻለን፡፡"
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
               MOE
             </div>
             <div>
-              <p class="font-bold text-white text-sm group-hover:text-orange-200 transition-colors duration-300">Ethiopia Ministry of Education</p>
-              <p class="text-xs text-orange-300 font-medium">Official Testimonial</p>
+              <p class="font-bold text-white text-xs sm:text-sm group-hover:text-orange-200 transition-colors duration-300">Ethiopia Ministry of Education</p>
+              <p class="text-[10px] sm:text-xs text-orange-300 font-medium">Official Testimonial</p>
             </div>
           </div>
-          <button class="mt-3 text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card1">
+          <button class="mt-3 text-[10px] sm:text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card1">
             <span>Read More</span>
             <i class="fas fa-chevron-down text-[10px]"></i>
           </button>
@@ -1513,35 +1508,35 @@
       </div>
 
       <!-- Card 2: MIDROC Investment Group -->
-      <div class="card-wrapper w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
+      <div class="card-wrapper w-[280px] sm:w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
         <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 via-orange-500/0 to-orange-600/0 group-hover:from-orange-500/20 group-hover:via-orange-500/10 group-hover:to-orange-600/20 transition-all duration-500 z-10 pointer-events-none"></div>
         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-orange-500/0 via-orange-400/0 to-orange-500/0 group-hover:from-orange-500/30 group-hover:via-orange-400/20 group-hover:to-orange-500/30 blur-xl transition-all duration-500 -z-0"></div>
         
-        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
           <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
             <div class="h-8 flex items-center gap-2">
               <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400 font-black text-xs group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-industry"></i>
               </div>
-              <span class="text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">MIDROC GROUP</span>
+              <span class="text-xs sm:text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">MIDROC GROUP</span>
             </div>
             <div class="flex items-center gap-0.5 text-orange-400 text-xs">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
-          <div class="text-slate-200 text-sm leading-relaxed mb-4 italic max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
+          <div class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-4 italic max-h-[140px] sm:max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
             "With reference to letter No. SMRI/551/26 dated 10/03/2026, in which we were requested to issue a Satisfactory Performance Letter, we hereby provide this testimonial. We certify that we have purchased reinforcing bars (Re-Bar) of various sizes from Steely R.M.I. PLC, with a total transaction volume exceeding 11,000 tons. During the execution of the contract, Steely R.M.I. PLC successfully supplied the materials in accordance with the required specifications, quality standards, and agreed timelines. Their performance was satisfactory, and the supplied products met our technical and operational requirements. We found Steely R.M.I. PLC to be reliable, professional, and cooperative throughout our business engagement. Based on our experience, we confidently recommend them for similar supply works."
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
               MI
             </div>
             <div>
-              <p class="font-bold text-white text-sm group-hover:text-orange-200 transition-colors duration-300">MIDROC Investment Group</p>
-              <p class="text-xs text-orange-300 font-medium">Official Testimonial</p>
+              <p class="font-bold text-white text-xs sm:text-sm group-hover:text-orange-200 transition-colors duration-300">MIDROC Investment Group</p>
+              <p class="text-[10px] sm:text-xs text-orange-300 font-medium">Official Testimonial</p>
             </div>
           </div>
-          <button class="mt-3 text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card2">
+          <button class="mt-3 text-[10px] sm:text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card2">
             <span>Read More</span>
             <i class="fas fa-chevron-down text-[10px]"></i>
           </button>
@@ -1549,35 +1544,35 @@
       </div>
 
       <!-- Card 3: Oromia Construction Corporation -->
-      <div class="card-wrapper w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
+      <div class="card-wrapper w-[280px] sm:w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
         <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 via-orange-500/0 to-orange-600/0 group-hover:from-orange-500/20 group-hover:via-orange-500/10 group-hover:to-orange-600/20 transition-all duration-500 z-10 pointer-events-none"></div>
         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-orange-500/0 via-orange-400/0 to-orange-500/0 group-hover:from-orange-500/30 group-hover:via-orange-400/20 group-hover:to-orange-500/30 blur-xl transition-all duration-500 -z-0"></div>
         
-        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
           <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
             <div class="h-8 flex items-center gap-2">
               <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400 font-black text-xs group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-hard-hat"></i>
               </div>
-              <span class="text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">OCC</span>
+              <span class="text-xs sm:text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">OCC</span>
             </div>
             <div class="flex items-center gap-0.5 text-orange-400 text-xs">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
-          <div class="text-slate-200 text-sm leading-relaxed mb-4 italic max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
+          <div class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-4 italic max-h-[140px] sm:max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
             "We, the Oromia Construction Corporation (OCC), hereby confirm that STEELY RMI PLC. has successfully supplied various sizes of reinforcement bars as per the terms of the mentioned tender, with a total value of 273,715,471.85 (Two Hundred Seventy-Three Million, Seven Hundred Fifteen Thousand, Four Hundred Seventy-One and 85/100 Ethiopian Birr). Therefore, we hereby certify that the company has fulfilled its contractual obligations in a satisfactory manner and in full compliance with our requirements."
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
               OC
             </div>
             <div>
-              <p class="font-bold text-white text-sm group-hover:text-orange-200 transition-colors duration-300">Oromia Construction Corp.</p>
-              <p class="text-xs text-orange-300 font-medium">Official Testimonial</p>
+              <p class="font-bold text-white text-xs sm:text-sm group-hover:text-orange-200 transition-colors duration-300">Oromia Construction Corp.</p>
+              <p class="text-[10px] sm:text-xs text-orange-300 font-medium">Official Testimonial</p>
             </div>
           </div>
-          <button class="mt-3 text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card3">
+          <button class="mt-3 text-[10px] sm:text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card3">
             <span>Read More</span>
             <i class="fas fa-chevron-down text-[10px]"></i>
           </button>
@@ -1585,45 +1580,45 @@
       </div>
 
       <!-- Card 4: Ethiopian Construction Works Corporation -->
-      <div class="card-wrapper w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
+      <div class="card-wrapper w-[280px] sm:w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
         <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 via-orange-500/0 to-orange-600/0 group-hover:from-orange-500/20 group-hover:via-orange-500/10 group-hover:to-orange-600/20 transition-all duration-500 z-10 pointer-events-none"></div>
         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-orange-500/0 via-orange-400/0 to-orange-500/0 group-hover:from-orange-500/30 group-hover:via-orange-400/20 group-hover:to-orange-500/30 blur-xl transition-all duration-500 -z-0"></div>
         
-        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
           <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
             <div class="h-8 flex items-center gap-2">
               <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400 font-black text-xs group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-building"></i>
               </div>
-              <span class="text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">ECWC</span>
+              <span class="text-xs sm:text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">ECWC</span>
             </div>
             <div class="flex items-center gap-0.5 text-orange-400 text-xs">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
           <div class="mb-4 flex items-center gap-3 bg-[#0a0f1a]/50 rounded-lg p-2 border border-orange-500/10 group-hover:border-orange-500/30 transition-colors duration-300">
-            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white font-bold text-xs shadow-lg shrink-0">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white font-bold text-xs shadow-lg shrink-0">
               <i class="fas fa-bridge"></i>
             </div>
             <div>
-              <p class="text-white text-xs font-bold group-hover:text-orange-200 transition-colors duration-300">Ethiopian Construction</p>
-              <p class="text-orange-300 text-[10px] font-medium">Works Corporation</p>
+              <p class="text-white text-[10px] sm:text-xs font-bold group-hover:text-orange-200 transition-colors duration-300">Ethiopian Construction</p>
+              <p class="text-orange-300 text-[8px] sm:text-[10px] font-medium">Works Corporation</p>
             </div>
-            <div class="ml-auto text-orange-400 text-[10px] font-bold border border-orange-400/30 px-2 py-0.5 rounded-full group-hover:border-orange-400/60 group-hover:bg-orange-400/10 transition-all duration-300">⭐ Verified</div>
+            <div class="ml-auto text-orange-400 text-[8px] sm:text-[10px] font-bold border border-orange-400/30 px-2 py-0.5 rounded-full group-hover:border-orange-400/60 group-hover:bg-orange-400/10 transition-all duration-300">⭐ Verified</div>
           </div>
-          <div class="text-slate-200 text-sm leading-relaxed mb-4 italic max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
+          <div class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-4 italic max-h-[140px] sm:max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
             "We have been sourcing our structural steel requirements from Steely RMI for the past 3 years. Their ability to consistently deliver high-quality rebar and other construction materials on time has been instrumental in keeping our large-scale infrastructure projects on schedule. The technical support and after-sales service provided by their team are exemplary. We particularly appreciate their willingness to work with us on custom specifications and tight deadlines. Steely RMI has proven to be a dependable partner for our corporation's diverse construction needs across Ethiopia."
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
               EC
             </div>
             <div>
-              <p class="font-bold text-white text-sm group-hover:text-orange-200 transition-colors duration-300">Abebe Tekle</p>
-              <p class="text-xs text-orange-300 font-medium">Procurement Director, ECWC</p>
+              <p class="font-bold text-white text-xs sm:text-sm group-hover:text-orange-200 transition-colors duration-300">Abebe Tekle</p>
+              <p class="text-[10px] sm:text-xs text-orange-300 font-medium">Procurement Director, ECWC</p>
             </div>
           </div>
-          <button class="mt-3 text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card4">
+          <button class="mt-3 text-[10px] sm:text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card4">
             <span>Read More</span>
             <i class="fas fa-chevron-down text-[10px]"></i>
           </button>
@@ -1631,146 +1626,146 @@
       </div>
 
       <!-- DUPLICATE SET (For Infinite Seamless Scroll Loop) -->
-      <div class="card-wrapper w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
+      <div class="card-wrapper w-[280px] sm:w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
         <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 via-orange-500/0 to-orange-600/0 group-hover:from-orange-500/20 group-hover:via-orange-500/10 group-hover:to-orange-600/20 transition-all duration-500 z-10 pointer-events-none"></div>
         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-orange-500/0 via-orange-400/0 to-orange-500/0 group-hover:from-orange-500/30 group-hover:via-orange-400/20 group-hover:to-orange-500/30 blur-xl transition-all duration-500 -z-0"></div>
-        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
           <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
             <div class="h-8 flex items-center gap-2">
               <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400 font-black text-xs group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-graduation-cap"></i>
               </div>
-              <span class="text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">MINISTRY OF EDUCATION</span>
+              <span class="text-xs sm:text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">MINISTRY OF EDUCATION</span>
             </div>
             <div class="flex items-center gap-0.5 text-orange-400 text-xs">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
-          <div class="text-slate-200 text-sm leading-relaxed mb-4 italic max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300" dir="rtl" lang="am">
+          <div class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-4 italic max-h-[140px] sm:max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300" dir="rtl" lang="am">
             "ስቴሊ አር.ኤም. አይ. ኃሊ.የተ.የገ.ማህበር ከመከሪያ ቤታችን ጋር ውለታ በመፈጸም የአርማታ ብረት ሲያቀርብ መቆየቱን በመግለጽ የመልካም ሥራ አፈጻጸም ማስረጃ እንዲጻፍለት በ16/03/2026 ዓ.ም በተጻፈ ደብዳቤ ጠይቋል፡፡ በመሆኑም ትምህርት ሚኒስቴር ለዩኒቨርሲቲዎች ግንባታ፣ለሁለተኛ እና አንደኛ ደረጃ ትምህርት ቤቶች መልሶ ግንባታ የሚያስፈልገውን አርማታ ብረት ለመግዛት በተለያየ ጊዜ ባወጣው ጨረታ ላይ ስቴሊ አር.ኤም. አይ. ኃሊ.የተ.የገ.ማህበር ተወዳድሮ አሸናፊ በመሆኑ ከመስሪያ ቤታችን ጋርውል ፈርማል፡፡ ድርጅቱም በገባው ውል መሰረት የተለያየ መጠን ያለውን አርማታ ብረት በማቅረብ ግዴታውን በብቃት የተወጣ በመሆኑ ይህን የመልካም ስራ አፈጻጸም ደብዳቤ ከምስጋና ጋር የሰጠናቸው መሆኑን እንገልጻለን፡፡"
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
               MOE
             </div>
             <div>
-              <p class="font-bold text-white text-sm group-hover:text-orange-200 transition-colors duration-300">Ethiopia Ministry of Education</p>
-              <p class="text-xs text-orange-300 font-medium">Official Testimonial</p>
+              <p class="font-bold text-white text-xs sm:text-sm group-hover:text-orange-200 transition-colors duration-300">Ethiopia Ministry of Education</p>
+              <p class="text-[10px] sm:text-xs text-orange-300 font-medium">Official Testimonial</p>
             </div>
           </div>
-          <button class="mt-3 text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card1">
+          <button class="mt-3 text-[10px] sm:text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card1">
             <span>Read More</span>
             <i class="fas fa-chevron-down text-[10px]"></i>
           </button>
         </div>
       </div>
 
-      <div class="card-wrapper w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
+      <div class="card-wrapper w-[280px] sm:w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
         <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 via-orange-500/0 to-orange-600/0 group-hover:from-orange-500/20 group-hover:via-orange-500/10 group-hover:to-orange-600/20 transition-all duration-500 z-10 pointer-events-none"></div>
         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-orange-500/0 via-orange-400/0 to-orange-500/0 group-hover:from-orange-500/30 group-hover:via-orange-400/20 group-hover:to-orange-500/30 blur-xl transition-all duration-500 -z-0"></div>
-        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
           <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
             <div class="h-8 flex items-center gap-2">
               <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400 font-black text-xs group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-industry"></i>
               </div>
-              <span class="text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">MIDROC GROUP</span>
+              <span class="text-xs sm:text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">MIDROC GROUP</span>
             </div>
             <div class="flex items-center gap-0.5 text-orange-400 text-xs">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
-          <div class="text-slate-200 text-sm leading-relaxed mb-4 italic max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
+          <div class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-4 italic max-h-[140px] sm:max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
             "With reference to letter No. SMRI/551/26 dated 10/03/2026, in which we were requested to issue a Satisfactory Performance Letter, we hereby provide this testimonial. We certify that we have purchased reinforcing bars (Re-Bar) of various sizes from Steely R.M.I. PLC, with a total transaction volume exceeding 11,000 tons. During the execution of the contract, Steely R.M.I. PLC successfully supplied the materials in accordance with the required specifications, quality standards, and agreed timelines. Their performance was satisfactory, and the supplied products met our technical and operational requirements. We found Steely R.M.I. PLC to be reliable, professional, and cooperative throughout our business engagement. Based on our experience, we confidently recommend them for similar supply works."
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
               MI
             </div>
             <div>
-              <p class="font-bold text-white text-sm group-hover:text-orange-200 transition-colors duration-300">MIDROC Investment Group</p>
-              <p class="text-xs text-orange-300 font-medium">Official Testimonial</p>
+              <p class="font-bold text-white text-xs sm:text-sm group-hover:text-orange-200 transition-colors duration-300">MIDROC Investment Group</p>
+              <p class="text-[10px] sm:text-xs text-orange-300 font-medium">Official Testimonial</p>
             </div>
           </div>
-          <button class="mt-3 text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card2">
+          <button class="mt-3 text-[10px] sm:text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card2">
             <span>Read More</span>
             <i class="fas fa-chevron-down text-[10px]"></i>
           </button>
         </div>
       </div>
 
-      <div class="card-wrapper w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
+      <div class="card-wrapper w-[280px] sm:w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
         <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 via-orange-500/0 to-orange-600/0 group-hover:from-orange-500/20 group-hover:via-orange-500/10 group-hover:to-orange-600/20 transition-all duration-500 z-10 pointer-events-none"></div>
         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-orange-500/0 via-orange-400/0 to-orange-500/0 group-hover:from-orange-500/30 group-hover:via-orange-400/20 group-hover:to-orange-500/30 blur-xl transition-all duration-500 -z-0"></div>
-        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
           <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
             <div class="h-8 flex items-center gap-2">
               <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400 font-black text-xs group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-hard-hat"></i>
               </div>
-              <span class="text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">OCC</span>
+              <span class="text-xs sm:text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">OCC</span>
             </div>
             <div class="flex items-center gap-0.5 text-orange-400 text-xs">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
-          <div class="text-slate-200 text-sm leading-relaxed mb-4 italic max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
+          <div class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-4 italic max-h-[140px] sm:max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
             "We, the Oromia Construction Corporation (OCC), hereby confirm that STEELY RMI PLC. has successfully supplied various sizes of reinforcement bars as per the terms of the mentioned tender, with a total value of 273,715,471.85 (Two Hundred Seventy-Three Million, Seven Hundred Fifteen Thousand, Four Hundred Seventy-One and 85/100 Ethiopian Birr). Therefore, we hereby certify that the company has fulfilled its contractual obligations in a satisfactory manner and in full compliance with our requirements."
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
               OC
             </div>
             <div>
-              <p class="font-bold text-white text-sm group-hover:text-orange-200 transition-colors duration-300">Oromia Construction Corp.</p>
-              <p class="text-xs text-orange-300 font-medium">Official Testimonial</p>
+              <p class="font-bold text-white text-xs sm:text-sm group-hover:text-orange-200 transition-colors duration-300">Oromia Construction Corp.</p>
+              <p class="text-[10px] sm:text-xs text-orange-300 font-medium">Official Testimonial</p>
             </div>
           </div>
-          <button class="mt-3 text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card3">
+          <button class="mt-3 text-[10px] sm:text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card3">
             <span>Read More</span>
             <i class="fas fa-chevron-down text-[10px]"></i>
           </button>
         </div>
       </div>
 
-      <div class="card-wrapper w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
+      <div class="card-wrapper w-[280px] sm:w-[320px] md:w-[400px] shrink-0 relative group cursor-pointer">
         <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 via-orange-500/0 to-orange-600/0 group-hover:from-orange-500/20 group-hover:via-orange-500/10 group-hover:to-orange-600/20 transition-all duration-500 z-10 pointer-events-none"></div>
         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-orange-500/0 via-orange-400/0 to-orange-500/0 group-hover:from-orange-500/30 group-hover:via-orange-400/20 group-hover:to-orange-500/30 blur-xl transition-all duration-500 -z-0"></div>
-        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+        <div class="bg-[#0a0f1a]/80 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 relative z-10 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
           <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
             <div class="h-8 flex items-center gap-2">
               <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400 font-black text-xs group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-building"></i>
               </div>
-              <span class="text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">ECWC</span>
+              <span class="text-xs sm:text-sm font-black tracking-wider text-slate-100 group-hover:text-orange-400 transition-colors duration-300">ECWC</span>
             </div>
             <div class="flex items-center gap-0.5 text-orange-400 text-xs">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
           </div>
           <div class="mb-4 flex items-center gap-3 bg-[#0a0f1a]/50 rounded-lg p-2 border border-orange-500/10 group-hover:border-orange-500/30 transition-colors duration-300">
-            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white font-bold text-xs shadow-lg shrink-0">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white font-bold text-xs shadow-lg shrink-0">
               <i class="fas fa-bridge"></i>
             </div>
             <div>
-              <p class="text-white text-xs font-bold group-hover:text-orange-200 transition-colors duration-300">Ethiopian Construction</p>
-              <p class="text-orange-300 text-[10px] font-medium">Works Corporation</p>
+              <p class="text-white text-[10px] sm:text-xs font-bold group-hover:text-orange-200 transition-colors duration-300">Ethiopian Construction</p>
+              <p class="text-orange-300 text-[8px] sm:text-[10px] font-medium">Works Corporation</p>
             </div>
-            <div class="ml-auto text-orange-400 text-[10px] font-bold border border-orange-400/30 px-2 py-0.5 rounded-full group-hover:border-orange-400/60 group-hover:bg-orange-400/10 transition-all duration-300">⭐ Verified</div>
+            <div class="ml-auto text-orange-400 text-[8px] sm:text-[10px] font-bold border border-orange-400/30 px-2 py-0.5 rounded-full group-hover:border-orange-400/60 group-hover:bg-orange-400/10 transition-all duration-300">⭐ Verified</div>
           </div>
-          <div class="text-slate-200 text-sm leading-relaxed mb-4 italic max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
+          <div class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-4 italic max-h-[140px] sm:max-h-[180px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent group-hover:text-slate-100 transition-colors duration-300">
             "We have been sourcing our structural steel requirements from Steely RMI for the past 3 years. Their ability to consistently deliver high-quality rebar and other construction materials on time has been instrumental in keeping our large-scale infrastructure projects on schedule. The technical support and after-sales service provided by their team are exemplary. We particularly appreciate their willingness to work with us on custom specifications and tight deadlines. Steely RMI has proven to be a dependable partner for our corporation's diverse construction needs across Ethiopia."
           </div>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-xs sm:text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
               EC
             </div>
             <div>
-              <p class="font-bold text-white text-sm group-hover:text-orange-200 transition-colors duration-300">Abebe Tekle</p>
-              <p class="text-xs text-orange-300 font-medium">Procurement Director, ECWC</p>
+              <p class="font-bold text-white text-xs sm:text-sm group-hover:text-orange-200 transition-colors duration-300">Abebe Tekle</p>
+              <p class="text-[10px] sm:text-xs text-orange-300 font-medium">Procurement Director, ECWC</p>
             </div>
           </div>
-          <button class="mt-3 text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card4">
+          <button class="mt-3 text-[10px] sm:text-xs text-orange-400 hover:text-orange-300 transition-colors font-medium flex items-center gap-1 read-more-btn" data-target="card4">
             <span>Read More</span>
             <i class="fas fa-chevron-down text-[10px]"></i>
           </button>
@@ -1781,10 +1776,87 @@
   </div>
 </section>
 
-<!-- Add Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- ========== SERVICES SECTION ========== -->
+<section id="services" class="py-16 md:py-24 bg-cover bg-center bg-no-repeat relative overflow-hidden bg-fixed-mobile" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('image/photo 11.jpg'); background-attachment: fixed;">
+  
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-0 left-0 w-full h-full">
+      <div class="absolute top-10 left-10 w-72 h-72 bg-orange-500/5 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse-slow animation-delay-2000"></div>
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-4 md:px-6 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
+      <div class="animate-fade-up">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="h-px w-8 bg-gradient-to-r from-transparent to-orange-500"></div>
+          <h2 class="text-orange-500 font-bold tracking-wider uppercase text-sm"><i class="fas fa-cogs mr-1"></i> Value-Added Services</h2>
+          <div class="h-px w-8 bg-gradient-to-l from-transparent to-orange-500"></div>
+        </div>
+        <h3 class="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-6 bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent bg-300% animate-gradient">
+          More Than Just a Supplier
+        </h3>
+        <p class="text-slate-200 mb-8 text-base sm:text-lg leading-relaxed">At Zemen trading plc, we don't just sell steel. We partner with contractors and developers to optimize their reinforcement workflows. From custom fabrication to specialized logistics, we help you build faster and smarter.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 services-grid">
+          <div class="flex gap-3 p-4 rounded-xl transition-all bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-orange-500/10 hover:border-orange-500/50 group cursor-pointer transform hover:-translate-y-1 duration-300">
+            <i class="fas fa-cut text-2xl text-orange-500 group-hover:scale-110 transition-transform"></i>
+            <div>
+              <h4 class="font-bold text-white group-hover:text-orange-300 transition-colors">Precision Cutting</h4>
+              <p class="text-slate-300 text-sm">Automated shearing to exact lengths.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 p-4 rounded-xl transition-all bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-orange-500/10 hover:border-orange-500/50 group cursor-pointer transform hover:-translate-y-1 duration-300">
+            <i class="fas fa-tools text-2xl text-orange-500 group-hover:scale-110 transition-transform"></i>
+            <div>
+              <h4 class="font-bold text-white group-hover:text-orange-300 transition-colors">Bending & Fabrication</h4>
+              <p class="text-slate-300 text-sm">Custom bends for stirrups and ties.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 p-4 rounded-xl transition-all bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-orange-500/10 hover:border-orange-500/50 group cursor-pointer transform hover:-translate-y-1 duration-300">
+            <i class="fas fa-truck text-2xl text-orange-500 group-hover:scale-110 transition-transform"></i>
+            <div>
+              <h4 class="font-bold text-white group-hover:text-orange-300 transition-colors">Just-In-Time Delivery</h4>
+              <p class="text-slate-300 text-sm">Coordinated delivery to job site.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 p-4 rounded-xl transition-all bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-orange-500/10 hover:border-orange-500/50 group cursor-pointer transform hover:-translate-y-1 duration-300">
+            <i class="fas fa-calculator text-2xl text-orange-500 group-hover:scale-110 transition-transform"></i>
+            <div>
+              <h4 class="font-bold text-white group-hover:text-orange-300 transition-colors">Rebar Estimating</h4>
+              <p class="text-slate-300 text-sm">Professional take-offs for exact ordering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative animate-fade-up animation-delay-200">
+        <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50 group">
+          <img src="https://storage.googleapis.com/dala-prod-public-storage/generated-images/9a4b4e0b-dc40-48bf-ac52-7677632e63e7/construction-site-rebar-46c7eb1f-1776186562841.webp" alt="Construction Service" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+        <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-orange-600 p-6 sm:p-8 rounded-2xl text-white hidden md:block shadow-2xl max-w-xs animate-float hover:scale-105 transition-transform duration-300 floating-badge">
+          <p class="text-2xl sm:text-3xl font-bold mb-1">24/7</p>
+          <p class="font-medium">On-Site Emergency Support</p>
+          <div class="absolute -top-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ========== STYLES ========== -->
 <style>
+  /* Mobile background fix */
+  .bg-fixed-mobile {
+    background-attachment: fixed;
+  }
+  @media (max-width: 768px) {
+    .bg-fixed-mobile {
+      background-attachment: scroll !important;
+    }
+  }
+
   /* Marquee Animation */
   @keyframes marquee {
     0% { transform: translateX(0); }
@@ -1825,6 +1897,18 @@
   .animate-fade-up {
     animation: fade-up 0.8s ease-out forwards;
   }
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  /* Float Animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
 
   /* Custom Scrollbar */
   .scrollbar-thin::-webkit-scrollbar {
@@ -1847,90 +1931,14 @@
   .card-wrapper {
     transition: transform 0.3s ease;
   }
-</style>
 
-<script>
-  // Read More Toggle Functionality
-  document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.read-more-btn');
-    
-    buttons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        e.stopPropagation();
-        const card = this.closest('.bg-[#0a0f1a]/80');
-        const textContainer = card.querySelector('.leading-relaxed');
-        
-        if (textContainer) {
-          if (textContainer.style.maxHeight === 'none' || textContainer.classList.contains('expanded')) {
-            textContainer.style.maxHeight = '180px';
-            textContainer.classList.remove('expanded');
-            this.querySelector('span').textContent = 'Read More';
-          } else {
-            textContainer.style.maxHeight = textContainer.scrollHeight + 'px';
-            textContainer.classList.add('expanded');
-            this.querySelector('span').textContent = 'Read Less';
-          }
-          this.classList.toggle('expanded');
-        }
-      });
-    });
-  });
-</script>
-
-<!-- CSS with Enhanced Animations -->
-<style>
-  @keyframes marquee {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-50%); }
-  }
-  .animate-marquee {
-    display: flex;
-    animation: marquee 25s linear infinite;
-  }
-  
-  @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .animate-fade-up {
-    animation: fadeUp 0.8s ease-out forwards;
-  }
-  
-  @keyframes pulse-slow {
-    0%, 100% { opacity: 0.5; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(1.1); }
-  }
-  .animate-pulse-slow {
-    animation: pulse-slow 4s ease-in-out infinite;
-  }
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-  
-  @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  .bg-300\% {
-    background-size: 300% 300%;
-  }
-  .animate-gradient {
-    animation: gradient 4s ease-in-out infinite;
-  }
-  
   /* Particles */
   .particle {
     position: absolute;
     border-radius: 50%;
     background: rgba(249, 115, 22, 0.15);
     animation: float-particle linear infinite;
+    pointer-events: none;
   }
   .particle-1 { width: 300px; height: 300px; top: -100px; right: -100px; animation-duration: 20s; }
   .particle-2 { width: 200px; height: 200px; bottom: -50px; left: -50px; animation-duration: 25s; animation-delay: -5s; }
@@ -1950,84 +1958,97 @@
   #productSlider::-webkit-scrollbar {
     display: none;
   }
+  #productSlider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
   
   /* Counter Animation */
   .counter {
     display: inline-block;
   }
+
+  /* MOBILE SPECIFIC FIXES */
+  @media (max-width: 640px) {
+    /* Product cards: full width minus padding, but keep snap */
+    .product-card {
+      width: 85vw !important;
+      max-width: 300px !important;
+      margin-right: 0.5rem;
+    }
+    .product-card .product-image-container {
+      height: 160px !important;
+    }
+    /* Header stats: smaller gaps and font */
+    .stats-container {
+      gap: 1rem !important;
+    }
+    .stats-container .counter {
+      font-size: 1.25rem !important;
+    }
+    /* Buttons in header stack */
+    .header-nav-buttons {
+      justify-content: center !important;
+    }
+    /* Testimonial cards: full width minus padding, smaller height */
+    .card-wrapper {
+      width: 85vw !important;
+      max-width: 320px !important;
+    }
+    /* Services grid: single column */
+    .services-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-card {
+      width: 90vw !important;
+    }
+    .card-wrapper {
+      width: 90vw !important;
+    }
+    .header-nav-buttons {
+      gap: 0.5rem !important;
+    }
+    .header-nav-buttons button {
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+    }
+    .header-nav-buttons i {
+      font-size: 0.9rem !important;
+    }
+  }
 </style>
 
-<!-- Services Section with Fixed Background & Enhanced Effects -->
-<section id="services" class="py-24 bg-cover bg-center bg-no-repeat relative overflow-hidden" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('image/photo 11.jpg'); background-attachment: fixed;">
-  
-  <!-- Animated Background Elements -->
-  <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <div class="absolute top-0 left-0 w-full h-full">
-      <div class="absolute top-10 left-10 w-72 h-72 bg-orange-500/5 rounded-full blur-3xl animate-pulse-slow"></div>
-      <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse-slow animation-delay-2000"></div>
-    </div>
-  </div>
-  
-  <div class="container mx-auto px-4 md:px-6 relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      <div class="animate-fade-up">
-        <div class="flex items-center gap-2 mb-3">
-          <div class="h-px w-8 bg-gradient-to-r from-transparent to-orange-500"></div>
-          <h2 class="text-orange-500 font-bold tracking-wider uppercase text-sm"><i class="fas fa-cogs mr-1"></i> Value-Added Services</h2>
-          <div class="h-px w-8 bg-gradient-to-l from-transparent to-orange-500"></div>
-        </div>
-        <h3 class="text-3xl md:text-5xl font-bold text-white mb-6 bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent bg-300% animate-gradient">
-          More Than Just a Supplier
-        </h3>
-        <p class="text-slate-200 mb-8 text-lg leading-relaxed">At Zemen trading plc, we don't just sell steel. We partner with contractors and developers to optimize their reinforcement workflows. From custom fabrication to specialized logistics, we help you build faster and smarter.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="flex gap-3 p-4 rounded-xl transition-all bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-orange-500/10 hover:border-orange-500/50 group cursor-pointer transform hover:-translate-y-1 duration-300">
-            <i class="fas fa-cut text-2xl text-orange-500 group-hover:scale-110 transition-transform"></i>
-            <div>
-              <h4 class="font-bold text-white group-hover:text-orange-300 transition-colors">Precision Cutting</h4>
-              <p class="text-slate-300 text-sm">Automated shearing to exact lengths.</p>
-            </div>
-          </div>
-          <div class="flex gap-3 p-4 rounded-xl transition-all bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-orange-500/10 hover:border-orange-500/50 group cursor-pointer transform hover:-translate-y-1 duration-300">
-            <i class="fas fa-tools text-2xl text-orange-500 group-hover:scale-110 transition-transform"></i>
-            <div>
-              <h4 class="font-bold text-white group-hover:text-orange-300 transition-colors">Bending & Fabrication</h4>
-              <p class="text-slate-300 text-sm">Custom bends for stirrups and ties.</p>
-            </div>
-          </div>
-          <div class="flex gap-3 p-4 rounded-xl transition-all bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-orange-500/10 hover:border-orange-500/50 group cursor-pointer transform hover:-translate-y-1 duration-300">
-            <i class="fas fa-truck text-2xl text-orange-500 group-hover:scale-110 transition-transform"></i>
-            <div>
-              <h4 class="font-bold text-white group-hover:text-orange-300 transition-colors">Just-In-Time Delivery</h4>
-              <p class="text-slate-300 text-sm">Coordinated delivery to job site.</p>
-            </div>
-          </div>
-          <div class="flex gap-3 p-4 rounded-xl transition-all bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-orange-500/10 hover:border-orange-500/50 group cursor-pointer transform hover:-translate-y-1 duration-300">
-            <i class="fas fa-calculator text-2xl text-orange-500 group-hover:scale-110 transition-transform"></i>
-            <div>
-              <h4 class="font-bold text-white group-hover:text-orange-300 transition-colors">Rebar Estimating</h4>
-              <p class="text-slate-300 text-sm">Professional take-offs for exact ordering.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="relative animate-fade-up animation-delay-200">
-        <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50 group">
-          <img src="https://storage.googleapis.com/dala-prod-public-storage/generated-images/9a4b4e0b-dc40-48bf-ac52-7677632e63e7/construction-site-rebar-46c7eb1f-1776186562841.webp" alt="Construction Service" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </div>
-        <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-orange-600 p-8 rounded-2xl text-white hidden md:block shadow-2xl max-w-xs animate-float hover:scale-105 transition-transform duration-300">
-          <p class="text-3xl font-bold mb-1">24/7</p>
-          <p class="font-medium">On-Site Emergency Support</p>
-          <div class="absolute -top-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Enhanced JavaScript Controller with Counter Animation -->
+<!-- ========== SCRIPTS ========== -->
 <script>
+  // Read More Toggle Functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.read-more-btn');
+    
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const card = this.closest('.bg-\[#0a0f1a\]\/80');
+        const textContainer = card.querySelector('.leading-relaxed');
+        
+        if (textContainer) {
+          if (textContainer.style.maxHeight === 'none' || textContainer.classList.contains('expanded')) {
+            textContainer.style.maxHeight = '140px';
+            textContainer.classList.remove('expanded');
+            this.querySelector('span').textContent = 'Read More';
+          } else {
+            textContainer.style.maxHeight = textContainer.scrollHeight + 'px';
+            textContainer.classList.add('expanded');
+            this.querySelector('span').textContent = 'Read Less';
+          }
+          this.classList.toggle('expanded');
+        }
+      });
+    });
+  });
+
   document.addEventListener('DOMContentLoaded', function () {
     // Product Slider Logic
     const slider = document.getElementById('productSlider');
